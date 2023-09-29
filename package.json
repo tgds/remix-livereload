@@ -1,6 +1,6 @@
 {
 	"name": "remix-livereload",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Same as Remix's LiveReload, but it exposes a handle to listen to HMR updates. Useful if you need to do some work after HMR updates, like reloading i18n translations.",
 	"keywords": [
 		"remix",

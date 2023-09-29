@@ -24,14 +24,12 @@ export function LiveReload({
 	onHMR,
 }: LiveReloadProps) {
 	useEffect(() => {
-		if (typeof window !== "undefined") {
-			if (typeof window.__hmr__ !== "object") {
-				window.__hmr__ = {};
-			}
-			window.__hmr__.hooks = {
-				onHMR,
-			};
+		if (typeof window.__hmr__ !== "object") {
+			window.__hmr__ = {};
 		}
+		window.__hmr__.hooks = {
+			onHMR,
+		};
 	}, [onHMR]);
 
 	let js = String.raw;
