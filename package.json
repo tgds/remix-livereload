@@ -1,0 +1,38 @@
+{
+	"name": "remix-livereload",
+	"version": "0.0.1",
+	"description": "Same as Remix's LiveReload, but it exposes a handle to listen to HMR updates. Useful if you need to do some work after HMR updates, like reloading i18n translations.",
+	"keywords": [
+		"remix",
+		"livereload",
+		"hmr"
+	],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:tgds/remix-livereload.git"
+	},
+	"sideEffects": false,
+	"module": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"type": "module",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsc",
+		"prepublishOnly": "pnpm run build"
+	},
+	"peerDependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20.7.0",
+		"@types/react": "^18.0.0",
+		"@types/react-dom": "^18.0.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"typescript": "^5.2.2"
+	}
+}
